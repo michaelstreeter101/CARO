@@ -18,4 +18,10 @@ At any time there will be a number of expected behaviours yet to be observed.  S
  
 Throughout the term, the teacher compiles the notes into a REPORT, which shows which observations were made on which dates. At the end of the term the report is completed and a copy is given to the child's parent.
 
- 
+We need to use IT to manage the workflow with the aim of 1. reducing paperwork 2. increasing consistency between teachers 3. reducing the risk of being found at fault by OFSTED.
+
+There is an app to do this already, but the preschools cannot afford the licence. This is to be a free implementation.
+
+The desired output of the system would be similar to the report currently sent home at the end of term, which is compiled by hand, and the current set of hand-written notes.
+
+Note there is a business rule that, on entry to the preschool, all teachers depost their mobile phones in a box.  Therefore this app does not need to work on a smartphone. The MVP should work on a tablet; the target platform will be a Chromebook. 
