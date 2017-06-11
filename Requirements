@@ -1,0 +1,21 @@
+A TEACHER (application user) has to assess the abilities of CHILDren under their care. This ASSESSMENT may be one of several ASSESSMENT-TYPEs  -- it can take the form of Anecdotal Records, checklists (inc. group assessments), rating scales.
+ 
+Each assessment record will contain the following header information: {school name, "Anecdotal Record", child's name, date, child's age (yy/mm), setting, time, observer name}.
+ 
+An anecdotal record contains: {header information}, incident (free text).
+ 
+A checklist may be for one of several categories. An example checklist for Fine-Motor Skills  is: {header information}, (Yes/No/Not Seen) Cuts paper, Pastes with a finger, Pours from a pitcher, Copies a circle from a drawing, Draws a straight line, Uses finger to pick up smaller objects, Draws a person with three parts.
+ 
+We might fill out several checklists simultaneously using a group assessment. An example group assessment form for Gross-Motor Skills, "Group Assessment", "Three-Year-Olds", {header information inc. names (Henry, Ed, Jo, Vicki, Cari, Deb)}, (Yes/No/Not Seen) Catches ball with arms extended, Throws ball underhanded, Completes forward somersault, Rides tricycle skillfully, Throws ball without losing balance, Hops on one foot.
+ 
+Alternatively, instead of yes/no checks, we may use rating scales. An example of a Social/Emotional Rating Scale: {header information}, Behavior (Never, Sometimes, Usually Always), Shows increased willingness to cooperate, Is patient and conscientious, Expresses anger verbally rather than physically, Has strong desire to please, Is eager to make friends and develop strong friendships, Respects property rights of others.
+ 
+This information is accompanied by age ranges where this behaviour would be expected to be observed. These behaviours could be listed in the order of the age they are expected to be seen, or grouped by category, sorted alphabetically etc. 
+ 
+When the teacher observes some behaviour or other of interest, she makes a note of the date and time and and the situation.  This information is used by the teacher during sessions and is compiled into a report for the child, printed and given to the parent at the end of term. 
+ 
+At any time there will be a number of expected behaviours yet to be observed.  Sometimes, a child will be observed specifically as having difficulty with a task, in which case a note must be made for a follow-up observation. These follow-up observations should also be included in the list, prompting the teacher, And in particular a reminder must be generated on the follow-up date.
+ 
+Throughout the term, the teacher compiles the notes into a REPORT, which shows which observations were made on which dates. At the end of the term the report is completed and a copy is given to the child's parent.
+
+ 
