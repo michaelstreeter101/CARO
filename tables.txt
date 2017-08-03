@@ -1,0 +1,116 @@
+CREATE TABLE teacher (teacher_id INT NOT NULL, teacher_name VARCHAR(20), teacher_start_date DATE, teacher_end_date DATE);
+INSERT INTO teacher VALUES (1, 'Michael', '2017-06-22', null);
+
+CREATE TABLE class (class_id INT NOT NULL, class_name VARCHAR(20), class_start_date DATE, class_end_date DATE, mon_start TIME, mon_finish TIME, tue_start TIME, tue_finish TIME, wed_start TIME, wed_finish TIME, thu_start TIME, thu_finish TIME, fri_start TIME, fri_finish TIME, sat_start TIME, sat_finish TIME, sun_start TIME, sun_finish TIME);
+
+INSERT INTO class VALUES (1, 'St. Oswalds', '2017-06-22', null, '08:30', '13:00', '00:00', '00:00', '08:30', '13:00', '08:30', '13:00', '08:30', '13:00', '00:00', '00:00', '00:00', '00:00');
+
+CREATE TABLE teacher_class (teacher_id INT NOT NULL, class_id INT NOT NULL, teacher_class_start_date DATE, teacher_class_end_date DATE);
+
+INSERT INTO teacher_class VALUES (1, 1, '2017-06-22', null );
+
+CREATE TABLE child (child_id INT NOT NULL, child_name VARCHAR(20) NOT NULL, class_id INT NOT NULL, child_start_date DATE, child_end_date DATE, mon_start TIME, mon_finish TIME, tue_start TIME, tue_finish TIME, wed_start TIME, wed_finish TIME, thu_start TIME, thu_finish TIME, fri_start TIME, fri_finish TIME, sat_start TIME, sat_finish TIME, sun_start TIME, sun_finish TIME);
+
+INSERT INTO child VALUES (1, 'Alice',   1, '2017-06-22', null, null, null, null, null, null, null, null, null, null, null, null, null, null, null );
+INSERT INTO child VALUES (2, 'Bob',     1, '2017-06-22', null, null, null, null, null, null, null, null, null, null, null, null, null, null, null );
+INSERT INTO child VALUES (3, 'Charlie', 1, '2017-06-22', null, null, null, null, null, null, null, null, null, null, null, null, null, null, null );
+INSERT INTO child VALUES (4, 'Duke',    1, '2017-06-22', null, null, null, null, null, null, null, null, null, null, null, null, null, null, null );
+
+
+CREATE TABLE assessment_type (assessment_type_id INT NOT NULL, assessment_type_short_description VARCHAR(20), assessment_type_description VARCHAR(5000));
+
+CREATE TABLE assessment_type...
+
+INSERT INTO assessment_type VALUES (1, 'Gross Motor-Skills', 'Locomotor Subscale
+Run
+1 Arms move in opposition to legs, elbows bent
+2 Brief period of suspension: both feet off the ground
+3 Narrow foot placement; lands on heel or toe; not flat footed
+4 Length of stride even; path of movement horizontal
+5 Nonsupport leg flexed to approximately 90 degrees
+6 Eyes focused forward
+Broad Jump
+1 Preparatory: flexion of both knees; arms behind body
+2 Arms extend forcefully; forward and upward to full extension above the head
+3 Take-off and landing on both feet simultaneously
+4 Take-off on both feet simultaneously; landing non-simultaneous
+5 Arms move downward during landing
+6 Balance maintained on landing
+Slide
+1 Body turned sideways; shoulders aligned with line on floor to initiate
+2 Steps sideways with lead foot; slides trail foot next to lead foot
+3 Minimum of four continuous step-slide cycles to right
+4 Minimum of four continuous step-slide cycles to left
+5 Arms used to assist leg action
+6 Body maintained in sideways position moving to right
+7 Body maintained in sideways position moving to left
+Gallop
+1 Arms (elbows) flexed and at waist level at take-off
+2 Step forward with lead foot; step with trail foot to a position adjacent to or behind lead foot
+3 Heel-toe action of lead foot
+4 Assumes initial position facing forward
+5 Final position facing forward
+6 Brief period of suspension; both feet off the floor
+7 Maintains rhythmic pattern: four consecutive gallops
+Leap
+1 Take off on one foot; land on opposite foot
+2 Brief period of suspension; both feet off the ground
+3 Forward reach with arm opposite the lead foot
+Hop
+1 Nonsupport leg swings forward in pendular motion to assist force production
+2 Foot of nonsupport leg remains behind body
+3 Arms flexed; swing forward together to produce force
+4 Weight received (lands) on ball of foot
+5 Takes off and lands three consecutive times on preferred foot
+6 Takes off and lands three consecutive times on nonpreferred foot
+
+Object Control Subscale
+Overarm Throw
+1 Wind-up initiated by downward movement of hand/arm
+2 Hip and shoulder rotated so that nonthrowing side faces target
+3 Steps (weight transferred ) onto foot opposite throwing arm
+4 Differentiated trunk rotation (2)
+5 Block trunk rotation (1)
+6 Timing of release/flight of ball appropriate (late release = downward flight; early release = upward flight)
+7 Arm follows-through beyond release: down and across the body
+Underhand Roll
+1 Ball arm/hand swings down/back of trunk; chest/head face forward
+2 Arm action in vertical plane
+3 Foot opposite ball hand strides forward toward cones
+4 Bends knees; lowers body
+5 Ball held in fingertips
+6 Ball released close to floor; bounces less than 4 inches high
+Kick
+1 Rapid and continuous approach to ball
+2 Elongated stride or leap immediately prior to ball contact
+3 Nonkicking foot placed even with or slightly in back of ball
+4 Leg swing is full; full backswing and forward swing of leg
+5 Backswing coordinated with forward action of nonkicking leg
+6 Ball contacted with instep of kicking foot (shoe-laces) or toe
+7 Kicks through ball; leg action does not stop at ball contact
+Catch
+1 Preparatory: hands in front of body; elbows flexed
+2 Arms extend toward ball as it moves closer
+3 Ball caught cleanly with hands/fingers (2)
+4 Ball trapped against body/chest (1)
+5 Ball tracked consistently and close to point of contact
+6 Doesn’t turn head/close eyes as ball approaches
+Stationary Strike
+1 Dominant hand grips bat just above nondominant hand
+2 Nonpreferred side of body faces imaginary “pitcher;” feet parallel
+3 Steps (transfers weight) onto foot opposite dominant hand to initiate strike
+4 Differentiated trunk rotation (2)
+5 Block trunk rotation (1)
+6 Arm action/plane of bat movement horizontal
+7 Ball contacts bat
+8 Swings through ball (action does not stop at ball contact)
+Stationary Dribble
+1 Arm action independent of trunk
+2 Ball contacted with one hand at about belt/waist height
+3 Pushes ball with fingertips (does not slap at ball with flat hand)
+4 Ball contacts surface in front of or to the outside of foot on preferred side
+5 Controls ball for 4 consecutive bounces; feet not moved to retrieve ball' );
+
+ALTER TABLE `carol2`.`child` ADD PRIMARY KEY (`child_id`);
+
+CREATE TABLE assessment_observation (assessment_type_id INT NOT NULL, observation_id INT NOT NULL, observation_category INT, observation_description VARCHAR(5000));

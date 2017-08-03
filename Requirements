@@ -6,7 +6,7 @@ An anecdotal record contains: {header information}, incident (free text).
  
 A checklist may be for one of several categories. An example checklist for Fine-Motor Skills  is: {header information}, (Yes/No/Not Seen) Cuts paper, Pastes with a finger, Pours from a pitcher, Copies a circle from a drawing, Draws a straight line, Uses finger to pick up smaller objects, Draws a person with three parts.
  
-We might fill out several checklists simultaneously using a group assessment. An example group assessment form for Gross-Motor Skills, "Group Assessment", "Three-Year-Olds", {header information inc. names (Henry, Ed, Jo, Vicki, Cari, Deb)}, (Yes/No/Not Seen) Catches ball with arms extended, Throws ball underhanded, Completes forward somersault, Rides tricycle skillfully, Throws ball without losing balance, Hops on one foot.
+We might fill out several checklists simultaneously using a group assessment. An example group assessment form for Gross Motor-Skills, "Group Assessment", "Three-Year-Olds", {header information inc. names (Henry, Ed, Jo, Vicki, Cari, Deb)}, (Yes/No/Not Seen) Catches ball with arms extended, Throws ball underhanded, Completes forward somersault, Rides tricycle skillfully, Throws ball without losing balance, Hops on one foot.
  
 Alternatively, instead of yes/no checks, we may use rating scales. An example of a Social/Emotional Rating Scale: {header information}, Behavior (Never, Sometimes, Usually Always), Shows increased willingness to cooperate, Is patient and conscientious, Expresses anger verbally rather than physically, Has strong desire to please, Is eager to make friends and develop strong friendships, Respects property rights of others.
  
@@ -25,3 +25,9 @@ There is an app to do this already, but the preschools cannot afford the licence
 The desired output of the system would be similar to the report currently sent home at the end of term, which is compiled by hand, and the current set of hand-written notes.
 
 Note there is a business rule that, on entry to the preschool, all teachers depost their mobile phones in a box.  Therefore this app does not need to work on a smartphone. The MVP should work on a tablet; the target platform will be a Chromebook. 
+
+Tech notes: as this project ia all about learning AWS, observe the following:
+     - For your web services use Amazon Lambda.
+     - For static files just use S3.
+     - For the database use MySQL.
+     - For email and other notifications use Amazon SES.

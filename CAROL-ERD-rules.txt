@@ -2,7 +2,7 @@ Relationship rules
 
 Consider the following example:
     child: "Helena Streeter"
-    is a member of: "Blue" group
+    is a member of: "Blue" class
     taught by: "Miss Walker"
     who made a child assessment: {"school_name": "St. Oswalds", "assessment_type": "Anecdotal Record", "child": "Helena Streeter", "date": 20170613, "age": "04/05", "setting": "Reading corner", "time": "11:25", "observer": "Miss Walker"}
     consisting of one observation: {"observation": "Held the book the correct way and turned the pages as if reading"}
@@ -10,10 +10,13 @@ Consider the following example:
     this information appeared on the end-of-term report: "Year 2017 / Term 1"
 
 Rules:
- 1. a child is assigned to one, and only one, group. 
- 2. a group is composed of zero or more children (normally several children in each group, a newly-created group may have zore children allocated)
- 3. a teacher is responsible for zero or more groups (normally a teacher will be responsible for at least 1 group, some teachers may not be assigned)
- 4. a group has zeor or one teachers (normally a teacher is assigned to a group, but the teacher can leave, so a group could temporarily have no teacher).
+ 1. a child is assigned to one, and only one, class. 
+ 2. a class is composed of zero or more children (normally several children in each class, a newly-created class may have zero children allocated)
+ 3. a teacher is/was responsible for zero or more classes (normally a teacher will be responsible for at least 1 class, some teachers may not be assigned)
+ 4. a class has/had zero or many teachers (normally a teacher is assigned to a class, but the teacher can leave, so a class could temporarily have no teacher).
+ 
+ NB: there could be only one class containing all the childern, but some children only come in on certain days
+ 
  5. a teacher performs zero or more child assessments
  6. each child assessment is performed by one, and only one teacher
  7. each child assessment relates to one, and only one, child
@@ -30,3 +33,4 @@ Rules:
 18. a report relates to one and only one child
 
 These rules are already encoded in the ERD diagram, CAROL-ERD-0.1.png, by the connection line endings.
+
