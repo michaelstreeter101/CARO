@@ -18,3 +18,17 @@ Setup instructions
    $ git commit
    $ git push
    $ git pull
+   
+Download MySQL Workbench from https://dev.mysql.com/downloads/workbench/ and install it.
+
+3. At the bash terminal, type:
+   $ aws rds describe-db-instances
+   
+   Note the endpoint address eg. carol2.caojcjifqqni.us-east-1.rds.amazonaws.com
+   
+4. Set up MySQL Workbench to connect to hostname "carol2", 
+       use the endpoint address of the hostname from the previous step, 
+       Username is masteruser
+       Default schema carol2
+       Click "test connection" and when prompted use the password that must never be written down or stored in a computer.
+       
